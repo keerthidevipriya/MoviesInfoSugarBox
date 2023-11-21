@@ -37,11 +37,11 @@ class HomeViewController: BaseTableViewController {
     }
     
     override func registerTableViewCell() {
-        /*tableView.registerCell(ImageViewTableViewCell.self)
-        tableView.registerCell(ListTitleTableViewCell.self)
-        tableView.registerCell(MainTitleTableViewCell.self)
+        tableView.registerCell(ImageViewCell.self)
+        tableView.registerCell(HomeTitleTableViewCell.self)
+        tableView.registerCell(MainTitleCell.self)
         tableView.registerCell(NBCarouselTVCell.self)
-        tableView.registerCell(SpacerTVCell.self)*/
+        tableView.registerCell(SpacerTVCell.self)
         
     }
 
