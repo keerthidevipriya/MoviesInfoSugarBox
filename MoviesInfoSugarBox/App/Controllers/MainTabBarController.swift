@@ -19,7 +19,7 @@ class MainTabBarController: UITabBarController, UITabBarControllerDelegate {
         item1.tabBarItem = icon1
         
         let item2 = ViewController()
-        let icon2 = UITabBarItem(title: "Movies", image: UIImage(systemName: "theatre"), selectedImage: UIImage(systemName: "theatre.fill"))
+        let icon2 = UITabBarItem(title: "Movies", image: UIImage(systemName: "sparkles.tv"), selectedImage: UIImage(systemName: "sparkles.tv.fill"))
         item2.tabBarItem = icon2
         
         let item3 = ViewController()
