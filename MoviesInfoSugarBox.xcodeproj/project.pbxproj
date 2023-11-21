@@ -16,6 +16,7 @@
 		56A381312B0C890200E2D499 /* MoviesInfoSugarBoxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A381302B0C890200E2D499 /* MoviesInfoSugarBoxTests.swift */; };
 		56A3813B2B0C890200E2D499 /* MoviesInfoSugarBoxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A3813A2B0C890200E2D499 /* MoviesInfoSugarBoxUITests.swift */; };
 		56A3813D2B0C890200E2D499 /* MoviesInfoSugarBoxUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A3813C2B0C890200E2D499 /* MoviesInfoSugarBoxUITestsLaunchTests.swift */; };
+		56A3814B2B0CAA9400E2D499 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A3814A2B0CAA9400E2D499 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		56A381362B0C890200E2D499 /* MoviesInfoSugarBoxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoviesInfoSugarBoxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		56A3813A2B0C890200E2D499 /* MoviesInfoSugarBoxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesInfoSugarBoxUITests.swift; sourceTree = "<group>"; };
 		56A3813C2B0C890200E2D499 /* MoviesInfoSugarBoxUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesInfoSugarBoxUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		56A3814A2B0CAA9400E2D499 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		56A381182B0C890000E2D499 /* MoviesInfoSugarBox */ = {
 			isa = PBXGroup;
 			children = (
+				56A381492B0CA94500E2D499 /* App */,
 				56A381192B0C890000E2D499 /* AppDelegate.swift */,
 				56A3811B2B0C890000E2D499 /* SceneDelegate.swift */,
 				56A3811D2B0C890000E2D499 /* ViewController.swift */,
@@ -125,6 +128,14 @@
 				56A3813C2B0C890200E2D499 /* MoviesInfoSugarBoxUITestsLaunchTests.swift */,
 			);
 			path = MoviesInfoSugarBoxUITests;
+			sourceTree = "<group>";
+		};
+		56A381492B0CA94500E2D499 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				56A3814A2B0CAA9400E2D499 /* HomeViewController.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +272,7 @@
 				56A3811E2B0C890000E2D499 /* ViewController.swift in Sources */,
 				56A3811A2B0C890000E2D499 /* AppDelegate.swift in Sources */,
 				56A3811C2B0C890000E2D499 /* SceneDelegate.swift in Sources */,
+				56A3814B2B0CAA9400E2D499 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
