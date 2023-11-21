@@ -15,7 +15,7 @@ class MainTabBarController: UITabBarController, UITabBarControllerDelegate {
     
     override func viewWillAppear(_ animated: Bool) {
         let item1 = HomeViewController.init(viewModel: ListViewModel())
-        let icon1 = UITabBarItem(title: "Home", image: UIImage(systemName: "bell"), selectedImage: UIImage(systemName: "bell.fill"))
+        let icon1 = UITabBarItem(title: "Home", image: UIImage(systemName: "house"), selectedImage: UIImage(systemName: "house.fill"))
         item1.tabBarItem = icon1
         
         let item2 = ViewController()
@@ -23,7 +23,7 @@ class MainTabBarController: UITabBarController, UITabBarControllerDelegate {
         item2.tabBarItem = icon2
         
         let item3 = ViewController()
-        let icon3 = UITabBarItem(title: "Shows", image: UIImage(systemName: "bell"), selectedImage: UIImage(systemName: "bell.fill"))
+        let icon3 = UITabBarItem(title: "Shows", image: UIImage(systemName: "tv"), selectedImage: UIImage(systemName: "tv.fill"))
         item3.tabBarItem = icon3
         let controllers = [item1, item2, item3]
         self.viewControllers = controllers
