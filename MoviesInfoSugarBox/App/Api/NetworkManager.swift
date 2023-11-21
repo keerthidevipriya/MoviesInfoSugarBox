@@ -12,9 +12,7 @@ enum HTTPMethod: String {
     case post = "POST"
 }
 
-protocol ResponseModel: Codable {
-    // Define any common properties or methods for your response model
-}
+protocol ResponseModel: Codable {}
 
 class NetworkManager {
     typealias CompletionHandler<T: Codable> = (Result<T, Error>) -> Void
@@ -41,13 +39,11 @@ class NetworkManager {
             if let error = error {
                 completionHandler(.failure(error))
             }
-            if let curlCommand = (response as? HTTPURLResponse)?.url?.absoluteString as? String {
-                print("curl command: \(curlCommand)")
+            if let apiResp = (response as? HTTPURLResponse)?.url?.absoluteString as? String {
+                print("Http resp: \(apiResp)")
             }
             do {
                 let decoder = JSONDecoder()
-//                let responseString = String(data: data!, encoding: .utf8)
-//                print("Response JSON: \(responseString ?? "Invalid JSON")")
                 let model = try decoder.decode(T.self, from: data!)
                 completionHandler(.success(model))
             } catch {
