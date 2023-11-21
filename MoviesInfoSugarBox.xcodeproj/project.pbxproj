@@ -40,6 +40,7 @@
 		56E2D3752B0CE51000C973E7 /* MainTitleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56E2D3732B0CE51000C973E7 /* MainTitleCell.xib */; };
 		56E2D3792B0CE98200C973E7 /* ImageViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E2D3772B0CE98200C973E7 /* ImageViewCell.swift */; };
 		56E2D37A2B0CE98200C973E7 /* ImageViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56E2D3782B0CE98200C973E7 /* ImageViewCell.xib */; };
+		56E2D37D2B0CF10B00C973E7 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E2D37C2B0CF10B00C973E7 /* MainTabBarController.swift */; };
 		800ECDA3F5E486EC8183E3F5 /* Pods_MoviesInfoSugarBoxTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FADA309955A579C0AB6F050E /* Pods_MoviesInfoSugarBoxTests.framework */; };
 		BC6102D59DADCB4F5F636612 /* Pods_MoviesInfoSugarBox_MoviesInfoSugarBoxUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8648E77990BE25B51FB2C20B /* Pods_MoviesInfoSugarBox_MoviesInfoSugarBoxUITests.framework */; };
 /* End PBXBuildFile section */
@@ -102,6 +103,7 @@
 		56E2D3732B0CE51000C973E7 /* MainTitleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainTitleCell.xib; sourceTree = "<group>"; };
 		56E2D3772B0CE98200C973E7 /* ImageViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewCell.swift; sourceTree = "<group>"; };
 		56E2D3782B0CE98200C973E7 /* ImageViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageViewCell.xib; sourceTree = "<group>"; };
+		56E2D37C2B0CF10B00C973E7 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		6CC0EB6DDCB8186C0E46CFFB /* Pods-MoviesInfoSugarBox-MoviesInfoSugarBoxUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoviesInfoSugarBox-MoviesInfoSugarBoxUITests.debug.xcconfig"; path = "Target Support Files/Pods-MoviesInfoSugarBox-MoviesInfoSugarBoxUITests/Pods-MoviesInfoSugarBox-MoviesInfoSugarBoxUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		8648E77990BE25B51FB2C20B /* Pods_MoviesInfoSugarBox_MoviesInfoSugarBoxUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoviesInfoSugarBox_MoviesInfoSugarBoxUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F160196A38B98A61E5E5C28 /* Pods-MoviesInfoSugarBox.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoviesInfoSugarBox.debug.xcconfig"; path = "Target Support Files/Pods-MoviesInfoSugarBox/Pods-MoviesInfoSugarBox.debug.xcconfig"; sourceTree = "<group>"; };
@@ -194,13 +196,13 @@
 		56A381492B0CA94500E2D499 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				56E2D37B2B0CF0D600C973E7 /* Controllers */,
 				56E2D36B2B0CE42B00C973E7 /* Extensions */,
 				56A381602B0CDB7A00E2D499 /* View */,
 				56A3815B2B0CD94B00E2D499 /* Api */,
 				56A381582B0CD8B300E2D499 /* Model */,
 				56A381532B0CCC5900E2D499 /* ViewModel */,
 				56A3814C2B0CC9E500E2D499 /* Common */,
-				56A3814A2B0CAA9400E2D499 /* HomeViewController.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -267,6 +269,15 @@
 				56E2D36C2B0CE43C00C973E7 /* UIColor+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		56E2D37B2B0CF0D600C973E7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				56A3814A2B0CAA9400E2D499 /* HomeViewController.swift */,
+				56E2D37C2B0CF10B00C973E7 /* MainTabBarController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		5E4B1882DBC75E84C954EC15 /* Frameworks */ = {
@@ -554,6 +565,7 @@
 				56E2D3612B0CE29600C973E7 /* MediaImageCategoryCell.swift in Sources */,
 				56A3815D2B0CD96E00E2D499 /* HomePageApi.swift in Sources */,
 				56E2D3652B0CE33800C973E7 /* HomeCarouselTVCell.swift in Sources */,
+				56E2D37D2B0CF10B00C973E7 /* MainTabBarController.swift in Sources */,
 				56A3815A2B0CD8C300E2D499 /* HomeModel.swift in Sources */,
 				56A381502B0CCA2800E2D499 /* BaseViewModel.swift in Sources */,
 				56E2D3692B0CE3BA00C973E7 /* VideoImageCarouselCell.swift in Sources */,
