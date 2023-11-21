@@ -17,6 +17,14 @@
 		56A3813B2B0C890200E2D499 /* MoviesInfoSugarBoxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A3813A2B0C890200E2D499 /* MoviesInfoSugarBoxUITests.swift */; };
 		56A3813D2B0C890200E2D499 /* MoviesInfoSugarBoxUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A3813C2B0C890200E2D499 /* MoviesInfoSugarBoxUITestsLaunchTests.swift */; };
 		56A3814B2B0CAA9400E2D499 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A3814A2B0CAA9400E2D499 /* HomeViewController.swift */; };
+		56A3814E2B0CC9FB00E2D499 /* BaseTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A3814D2B0CC9FB00E2D499 /* BaseTableTableViewController.swift */; };
+		56A381502B0CCA2800E2D499 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A3814F2B0CCA2800E2D499 /* BaseViewModel.swift */; };
+		56A381522B0CCA7F00E2D499 /* CellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A381512B0CCA7F00E2D499 /* CellProtocol.swift */; };
+		56A381552B0CCC6400E2D499 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A381542B0CCC6400E2D499 /* HomeViewModel.swift */; };
+		56A381572B0CCC8C00E2D499 /* SongsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A381562B0CCC8C00E2D499 /* SongsModel.swift */; };
+		56A3815A2B0CD8C300E2D499 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A381592B0CD8C300E2D499 /* HomeModel.swift */; };
+		56A3815D2B0CD96E00E2D499 /* HomePageApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A3815C2B0CD96E00E2D499 /* HomePageApi.swift */; };
+		56A3815F2B0CD9B500E2D499 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A3815E2B0CD9B500E2D499 /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +59,14 @@
 		56A3813A2B0C890200E2D499 /* MoviesInfoSugarBoxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesInfoSugarBoxUITests.swift; sourceTree = "<group>"; };
 		56A3813C2B0C890200E2D499 /* MoviesInfoSugarBoxUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesInfoSugarBoxUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		56A3814A2B0CAA9400E2D499 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		56A3814D2B0CC9FB00E2D499 /* BaseTableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableTableViewController.swift; sourceTree = "<group>"; };
+		56A3814F2B0CCA2800E2D499 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		56A381512B0CCA7F00E2D499 /* CellProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellProtocol.swift; sourceTree = "<group>"; };
+		56A381542B0CCC6400E2D499 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		56A381562B0CCC8C00E2D499 /* SongsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongsModel.swift; sourceTree = "<group>"; };
+		56A381592B0CD8C300E2D499 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
+		56A3815C2B0CD96E00E2D499 /* HomePageApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageApi.swift; sourceTree = "<group>"; };
+		56A3815E2B0CD9B500E2D499 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,9 +149,49 @@
 		56A381492B0CA94500E2D499 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				56A3815B2B0CD94B00E2D499 /* Api */,
+				56A381582B0CD8B300E2D499 /* Model */,
+				56A381532B0CCC5900E2D499 /* ViewModel */,
+				56A3814C2B0CC9E500E2D499 /* Common */,
 				56A3814A2B0CAA9400E2D499 /* HomeViewController.swift */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		56A3814C2B0CC9E500E2D499 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				56A3814D2B0CC9FB00E2D499 /* BaseTableTableViewController.swift */,
+				56A3814F2B0CCA2800E2D499 /* BaseViewModel.swift */,
+				56A381512B0CCA7F00E2D499 /* CellProtocol.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		56A381532B0CCC5900E2D499 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				56A381542B0CCC6400E2D499 /* HomeViewModel.swift */,
+				56A381562B0CCC8C00E2D499 /* SongsModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		56A381582B0CD8B300E2D499 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				56A381592B0CD8C300E2D499 /* HomeModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		56A3815B2B0CD94B00E2D499 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				56A3815C2B0CD96E00E2D499 /* HomePageApi.swift */,
+				56A3815E2B0CD9B500E2D499 /* NetworkManager.swift */,
+			);
+			path = Api;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,10 +325,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56A3815F2B0CD9B500E2D499 /* NetworkManager.swift in Sources */,
 				56A3811E2B0C890000E2D499 /* ViewController.swift in Sources */,
 				56A3811A2B0C890000E2D499 /* AppDelegate.swift in Sources */,
+				56A3814E2B0CC9FB00E2D499 /* BaseTableTableViewController.swift in Sources */,
+				56A381552B0CCC6400E2D499 /* HomeViewModel.swift in Sources */,
+				56A381522B0CCA7F00E2D499 /* CellProtocol.swift in Sources */,
+				56A381572B0CCC8C00E2D499 /* SongsModel.swift in Sources */,
 				56A3811C2B0C890000E2D499 /* SceneDelegate.swift in Sources */,
 				56A3814B2B0CAA9400E2D499 /* HomeViewController.swift in Sources */,
+				56A3815D2B0CD96E00E2D499 /* HomePageApi.swift in Sources */,
+				56A3815A2B0CD8C300E2D499 /* HomeModel.swift in Sources */,
+				56A381502B0CCA2800E2D499 /* BaseViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
