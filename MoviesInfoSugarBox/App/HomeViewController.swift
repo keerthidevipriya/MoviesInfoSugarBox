@@ -40,7 +40,7 @@ class HomeViewController: BaseTableViewController {
         tableView.registerCell(ImageViewCell.self)
         tableView.registerCell(HomeTitleTableViewCell.self)
         tableView.registerCell(MainTitleCell.self)
-        tableView.registerCell(NBCarouselTVCell.self)
+        tableView.registerCell(HomeCarouselTVCell.self)
         tableView.registerCell(SpacerTVCell.self)
         
     }

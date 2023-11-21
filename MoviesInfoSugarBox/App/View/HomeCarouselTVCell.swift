@@ -32,7 +32,7 @@ class NBCarouselTVCellModel: CellModelProtocol {
     
     var removeObserver : Bool = false
     
-    var reusableIdentifier: String  = NBCarouselTVCell.identifier
+    var reusableIdentifier: String  = HomeCarouselTVCell.identifier
     var height: CGFloat = UITableView.automaticDimension
     var estimatedhHeight: CGFloat = 160
     var isMainCarousel = false
@@ -53,7 +53,7 @@ class NBCarouselTVCellModel: CellModelProtocol {
 }
 
 
-class NBCarouselTVCell: UITableViewCell, ConfigurableView {
+class HomeCarouselTVCell: UITableViewCell, ConfigurableView {
    
     
     @IBOutlet weak var collectionViewHeight: NSLayoutConstraint!
@@ -83,20 +83,18 @@ class NBCarouselTVCell: UITableViewCell, ConfigurableView {
     func setupView() {
         self.tag = tag
         tag += 1
-        collectionView.register(VideoImageCollectionViewCell.self)
+        collectionView.register(VideoImageCarouselCell.self)
         collectionView.delegate = self
         collectionView.dataSource = self
     }
     
 }
 
-extension NBCarouselTVCell: UICollectionViewDelegate{
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
-    }
+extension HomeCarouselTVCell: UICollectionViewDelegate{
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {}
 }
 
-extension NBCarouselTVCell: UICollectionViewDataSource{
+extension HomeCarouselTVCell: UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return model?.numberOfItems() ?? 1
     }
@@ -115,7 +113,7 @@ extension NBCarouselTVCell: UICollectionViewDataSource{
 }
 
 
-extension NBCarouselTVCell: UICollectionViewDelegateFlowLayout{
+extension HomeCarouselTVCell: UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         guard let model = model else {
             return CGSize.zero

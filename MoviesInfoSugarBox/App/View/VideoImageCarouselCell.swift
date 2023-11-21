@@ -38,7 +38,7 @@ class VideoImageCVCCellModel: CaraouselCVCellModel {
         return CGSize.init(width: collectionViewWidth, height: collectionViewHeight)
     }
     
-    var reusableIdentifier: String = VideoImageCollectionViewCell.identifier
+    var reusableIdentifier: String = VideoImageCarouselCell.identifier
     
     var height: CGFloat = collectionViewHeight
     
@@ -72,7 +72,7 @@ extension VideoImageCVCCellModel : CaraousalCVCellAdjustable {
     }
 }
 
-class VideoImageCollectionViewCell: UICollectionViewCell, ConfigurableView {
+class VideoImageCarouselCell: UICollectionViewCell, ConfigurableView {
     
 
     @IBOutlet weak var mediaView: UIView!
